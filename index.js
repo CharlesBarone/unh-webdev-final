@@ -3,6 +3,8 @@ const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose');
 
+const port = process.env.PORT || 3000
+
 const uri = "mongodb+srv://mongo:BBRvG2Z3dXj7ZXWF@cluster0.q3wyw24.mongodb.net/web_dev_final?retryWrites=true&w=majority";
 
 mongoose.set('strictQuery', false);
@@ -71,4 +73,4 @@ http.createServer((req, res) =>{
             res.end();
             break;
     }
-}).listen(8000, ()=> console.log("500 Okay"));
+}).listen(port, ()=> console.log("500 Okay"));

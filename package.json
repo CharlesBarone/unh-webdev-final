@@ -6,9 +6,13 @@
   "author": "Charles Barone",
   "license": "ISC",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "node index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "mongoose": "^6.8.0"
+  },
+  "engines": {
+    "node": "18.12.0"
   }
 }
